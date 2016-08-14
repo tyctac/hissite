@@ -1,0 +1,115 @@
+.panels-flexible-frontpage .panels-flexible-region {
+  padding: 0;
+}
+
+.panels-flexible-frontpage .panels-flexible-region-inside {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.panels-flexible-frontpage .panels-flexible-region-inside-first {
+  padding-left: 0;
+}
+
+.panels-flexible-frontpage .panels-flexible-region-inside-last {
+  padding-right: 0;
+}
+
+.panels-flexible-frontpage .panels-flexible-column {
+  padding: 0;
+}
+
+.panels-flexible-frontpage .panels-flexible-column-inside {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.panels-flexible-frontpage .panels-flexible-column-inside-first {
+  padding-left: 0;
+}
+
+.panels-flexible-frontpage .panels-flexible-column-inside-last {
+  padding-right: 0;
+}
+
+.panels-flexible-frontpage .panels-flexible-row {
+  padding: 0 0 0.5em 0;
+  margin: 0;
+}
+
+.panels-flexible-frontpage .panels-flexible-row-last {
+  padding-bottom: 0;
+}
+
+.panels-flexible-column-frontpage-1 {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-frontpage-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-frontpage {
+  width: auto;
+}
+
+.panels-flexible-region-frontpage-banner_rotation {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-frontpage-2-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-column-frontpage-4 {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-frontpage-3-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-frontpage-welcome {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-frontpage-12-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-column-frontpage-8 {
+  float: left;
+  width: 49.5000%;
+}
+
+.panels-flexible-column-frontpage-9 {
+  float: left;
+  width: 49.5000%;
+}
+
+.panels-flexible-row-frontpage-7-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-frontpage-left_column {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-frontpage-10-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-frontpage-middle_column {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-frontpage-11-inside {
+  padding-right: 0px;
+}
+
