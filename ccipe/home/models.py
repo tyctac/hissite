@@ -14,5 +14,5 @@ class Choice(models.Model):
     votes = models.IntegerField(default=0)
 
 class WelcomeHead(models.Model):
-    choice_text = models.CharField(max_length=200)
+    welcome_head_text = models.CharField(max_length=200)
     

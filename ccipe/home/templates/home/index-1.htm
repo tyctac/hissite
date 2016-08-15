@@ -231,7 +231,16 @@ onfocus="if (this.value == 'search word') this.value=''" onblur="if (this.value 
     <footer  class="metainfo">&nbsp;
             </footer>
     <div class="module-content">
-        			<h2>China Center of International Politics and Economy (CCIPE) - Welcome!</h2>
+        			<!-- <h2>{{ welcome_head.welcome_head_text }}</h2> -->
+                    {% if welcome_head_list %}
+                    <ul>
+                    {% for welcomehead in welcome_head_list %}
+                    <li>{{ welcomehead.welcome_head_text }}</a></li>
+                    {% endfor %}
+                    </ul>
+                    {% else %}
+                    <p>No welcome are available.</p>
+                    {% endif %}
 		        <div class="content">
             <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Dear visitors,</p>
 
