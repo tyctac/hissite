@@ -1,0 +1,1126 @@
+/* DIV-Block for messages */
+div.drupal-messages-container {
+    width: 98.9%;
+    margin-left: 1.1%;
+    margin-bottom: 1em;
+}
+
+/* DIV-Block for drupal tabs */
+div.drupal-tabs-container {
+    margin-left: 1.6129%;
+}
+
+/* Styles for drupal tabs */
+ul.drupal-tabs {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    border-bottom:2px solid #B6C0C1;
+    height:2.8em;
+}
+
+ul.drupal-tabs  > li { 
+	height:2.8em;
+    width: auto;
+    background-color: #B6C0C1;
+    margin-left: 10px;
+    margin-bottom: 0.6%;
+    color: #393A3E;
+    display: inline;
+    float: left;
+    padding: 0px;
+    border: 0px none;
+    list-style-type: none;
+	border-width: 2px 2px 0px 2px;
+	border-style: solid solid none solid;
+	border-color: #B6C0C1 #B6C0C1 transparent #B6C0C1;
+}
+
+ul.drupal-tabs > li:first-child {
+    margin-left: 0px;
+}
+
+ul.drupal-tabs > li.active {
+    border-bottom: medium none;
+    background: none repeat scroll 0% 0% #FFF;
+}
+
+ul.drupal-tabs  > li > a {
+    display: block;
+    padding:0.8em 1em;
+    font-weight: bold;
+    color: #393A3E;
+}
+
+ul.drupal-tabs  > li > a:visited, ul.drupal-tabs  > li > a:hover {
+    font-weight: bold;
+    color: #393A3E;
+    text-decoration: none;
+}
+
+ul.drupal-tabs  > li > a:focus{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Display grey language for not translated pages */
+.nav-language > li > .inactive {
+    color: #CCCCCC;
+}
+
+/* Fix active link colour in footer bar */
+footer .nav-footer li a.active {
+    color: #FFFFFF;
+}
+
+/* Fix overflow in apps */
+.nav-app .module-content {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Twitter icon for sidebar apps */
+.nav-app-twitter::before {
+    content:"\f099";
+}
+
+/* Fix the padding for news and twitter sidebar apps */
+.nav-app-offiziell ~ .module-content,
+.nav-app-twitter ~ .module-content {
+    padding: 8px 0;
+}
+
+/* Fix the padding for lectures and literature sidebar apps */
+.nav-app-lectures ~ .module-content,
+.nav-app-literature ~ .module-content {
+  padding: 8px;
+}
+
+/* Fix the font style in literature sidebar apps */
+.nav-app-literature + .module-content p {
+  font-style: normal;
+}
+
+/* Fix the text alignment of the "more link" in WWUCD News and Events sidebar app views */
+.nav-apps .view-news .more-link ,
+.nav-apps .view-events .more-link {
+    text-align: center;
+}
+
+/* Fix margin of the search submit button */
+.search-form input.form-submit {
+    margin-top: 5px;
+}
+
+/* Fix float of the search advanced actions container */
+.search-advanced .action {
+    float: none;
+}
+
+/* Display of Tags/Category in WWUCD News and WWUCD Events */
+.field-name-field-tags,
+.field-name-field-wwu-news-categories,
+.field-name-field-wwu-event-categories{
+    color: #8c9598;
+    display: inline-block;
+    margin-right: 2em;
+}
+.field-name-field-attachments{
+    color: #8c9598;
+}
+/* Label in Bold */
+.wwucd_news_tags_label,
+.wwucd_news_category_label,
+.wwucd_news_attachments_label{
+    font-weight: bold;
+}
+
+/* Event date / location inline */
+.wwucd_event_location,
+.wwucd_event_date{
+    display: inline;
+}
+
+.wwucd_event_head{
+    margin: 1em 0;
+    font-weight: bold;
+}
+
+/** Allow for silbentrennung **/
+.hyphens{
+    -moz-hyphens: auto;
+    -o-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto; 
+}
+/* Attachment list without top/bottom margin */
+ul.wwucd_news_attachment_list{
+    margin: 0 !important;
+    list-style-type: none;
+}
+.wwucd_news_attachment_list .file-icon{
+    display: none;
+}
+
+/* Comments */
+#comments {
+    margin-top: 2em;
+}
+
+/* Have the comment textarea with an initial height of 180px, instead of something around 50px */
+#edit-comment-body-und-0-value{
+    height: 180px;
+}
+
+/* Have a border around single comments */
+.comment{
+    border: 1px solid #8c9598;
+    margin-bottom: 1.5em;
+}
+/* No border on comment preview */
+.comment-preview{
+    border: 0 !important;
+    background-color: #fff !important;
+    margin-bottom: 0 !important;
+}
+.comment-preview-article{
+    margin-bottom: 1.5em;
+}
+/* Comment meta **/
+.comment-meta{
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    color: #fff;
+    font-size: 0.93333em;
+    padding: 2px 10px 2px 3px;
+    background-color: #b6c0c1;
+}
+.comment-meta a, .comment-meta a.active {
+    color: #fff;
+}
+
+.comment-meta address{
+    display: inline-block;
+}
+/* Comment text */
+.comment-text{
+	padding: 8px;
+}
+/* No more indent for comments on level 4 and below */
+#comments > div.indented > div.indented div.indented {
+    margin-left: 0 !important;
+}
+
+/* Correct the position of some elements in WWU News and WWU Events */
+@media (min-width:37.5em){
+    article.node-wwu-news.node-teaser.short figure.inline-left,
+    article.node-wwu-news.node-teaser.short figure.inline-right,
+    article.node-wwu-event.node-teaser.short figure.inline-left,
+    article.node-wwu-event.node-teaser.short figure.inline-rigt
+    {
+        margin-top: 3.75%;
+    }
+    article.node-wwu-news figure.inline-left,
+    article.node-wwu-news figure.inline-right,
+    article.node-wwu-event figure.inline-left,
+    article.node-wwu-event figure.inline-right
+    {
+        margin-top: 2.15%;
+    }
+    article.node-wwu-news.node-teaser.short .subhead,
+    article.node-wwu-news.node-teaser.short .subhead,
+    article.node-wwu-event.node-teaser.short .subhead,
+    article.node-wwu-event.node-teaser.short .subhead
+    {
+        margin-bottom: 0.85em;
+    }
+}
+
+/* Min-height for thumbnails in teaser view */
+article.node-teaser figure.inline-left, article.node-teaser figure.inline-right {
+    min-height: 190px;
+}
+
+/* Hide the taxonomy description in taxonomy view */
+.taxonomy-term-description {
+    display: none;
+}
+
+/* Style for WWU tiles */
+.wwu-tile {
+    display: table;
+    width: 100%;
+}
+
+.wwu-tile:hover {
+    opacity: .80;
+    background-color: #FFFFEE;
+}
+
+.wwu-tile-icon {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 22%;
+}
+
+.wwu-tile-icon img {
+    width: 70%;
+    height: 70%;
+}
+
+@media all and (min-width:25em) {
+    .wwu-tile-icon {
+        width: 20%;
+    }
+    
+    .wwu-tile-icon img {
+        width: 60%;
+        height: 60%;
+    }
+}
+
+@media all and (min-width:37.5em) {
+    .wwu-tile-icon {
+        width: 25%;
+    }
+    
+    .wwu-tile-icon img {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+.wwu-tile-icon > a {
+    display: block;
+}
+
+.wwu-tile-icon a:focus {
+    background: none;
+}
+
+.wwu-tile-content {
+    display: table-cell;
+}
+
+.wwu-tile-content > a {
+    display: block;
+    padding: 2% 2% 2% 5%;
+}
+
+.wwu-tile-content a:link, .wwu-tile-content a:visited  {
+    color: #000000;
+}
+
+.wwu-tile-content a:hover {
+    text-decoration: none;
+}
+
+.wwu-tile-content a:focus {
+    background: none;
+}
+
+/* Fix the margin of the first article in views */
+.main .views-row > article.module:first-child {
+    margin-top: 1.6129%;
+}
+
+.main .views-row-1 > article.module:first-child {
+    margin-top: 0;
+}
+
+/* Don't fix the margin of the first article in attached views */
+.main .view-attached .view-content > article.module:first-child,
+.main .view-attached .views-row-1 > article.module:first-child {
+    margin-top: 1.6129%;
+}
+
+/* Fix the margin of the first article, if panels are used */
+.main .pane-content > article.module:first-child {
+    margin-top: 1.6129%;
+}
+
+.main .panel-pane:first-child .pane-content > article.module:first-child {
+    margin-top: 0;
+}
+
+.main .panel-pane .views-row > article.module:first-child {
+    margin-top: 1.6129%;
+}
+
+/* Fix the display of view sections */
+.main .view-footer, .main .view-pager {
+    display: block;
+    float: left;
+}
+
+.main .view-footer, .main .view-pager {
+    width: 100%;
+}
+
+.main .view-pager {
+  text-align: center;
+}
+
+/* Fix the position of the view-footer*/
+.view-footer{
+  text-align: center;
+}
+
+/* Style declarations for a view pager */
+.view-pager .pager {
+  display: inline-block;
+  margin: 1.6129% 0;
+  padding: 0;
+}
+
+.view-pager .pager li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.view-pager .pager li a {
+  color: #000;
+  float: left;
+  padding: 6px 12px;
+  margin: 5px;
+  line-height: 1.42857;
+  text-decoration: none;
+  background-color: #FFF;
+  border: 1px solid #BEC6C8;
+}
+
+.view-pager .pager li.pager-current,
+.view-pager .pager li.pager-ellipsis {
+  color: #000;
+  float: left;
+  padding: 6px 12px;
+  margin: 5px;
+  line-height: 1.42857;
+  text-decoration: none;
+  background-color: #FFF;
+  border: 1px solid #BEC6C8;
+}
+
+.view-pager .pager li.pager-current {
+  color: #555;
+  background-color: #EDEDED;
+}
+
+.view-pager .pager li a:hover {
+  background-color: #666;
+  color: #FFF;
+}
+
+/* Fix the background position of internal links inside the view footer */
+.view-footer > .element-content a.int::before{
+    background-position: 0 -192px;
+}
+
+/* Fix the overflow in active accordion elements */
+.js .element > li.active > section {
+    overflow: auto;
+}
+
+/* Fix list elements inside akkordeons (with draggableviews) */
+ul.akkordeon.element.ui-sortable li ul {
+    list-style-type: square;
+    padding-left: 40px;
+}
+ul.akkordeon.element.ui-sortable li ul li {
+	list-style-type: square;
+	float: none;
+}
+
+/* Style for displaying WWU cards */
+.wwu-card {
+    overflow: auto;
+}
+
+.wwu-card-photo {
+    margin-bottom: 10px;
+}
+
+/* Style for displaying WWU card groups, WWU publication groups, WWU project groups and WWU course groups */
+.wwu-card-group, .wwu-card-group-header, .wwu-card-group-section, .wwu-publication-group, .wwu-publication-group-header, .wwu-publication-group-section, .wwu-project-group, .wwu-project-group-header, .wwu-project-group-section, .wwu-course-group, .wwu-course-group-header, .wwu-course-group-section {
+    display:block;
+    position:relative;
+    float:left;
+}
+
+.wwu-card-group, .wwu-publication-group, .wwu-project-group, .wwu-course-group, .wwu-publication-group-section {
+    width: 100%;
+}
+
+.wwu-card-group:first-child, .wwu-publication-group:first-child, .wwu-project-group:first-child, .wwu-course-group:first-child {
+    margin-top:0px;
+}
+
+.wwu-card-group:first-child > .wwu-card-group-header, .wwu-publication-group:first-child > .wwu-publication-group-header, .wwu-project-group:first-child > .wwu-project-group-header, .wwu-course-group:first-child > .wwu-course-group-header {
+    margin-top:1%;
+}
+
+.wwu-card-group-header, .wwu-publication-group-header, .wwu-project-group-header, .wwu-course-group-header {
+    width:98.3871%;
+    margin-top: 1.6129%;
+    margin-left: 1.6129%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #BEC6C8;
+}
+
+.wwu-card-group-header > h1, .wwu-publication-group-header > h1, .wwu-project-group-header > h1, .wwu-course-group-header > h1 {
+    display:block;
+    margin:0;
+    font-size: 1.4em;
+}
+
+.wwu-card-group-header > h1 > a, .wwu-publication-group-header > h1 > a, .wwu-project-group-header > h1 > a, .wwu-course-group-header > h1 > a {
+    display:block;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin:0px;
+    padding: 5px 0px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-image: url(data:image/png;base64,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);    
+}
+
+.wwu-card-group-header > h1 > a.collapsed, .wwu-publication-group-header > h1 > a.collapsed, .wwu-project-group-header > h1 > a.collapsed, .wwu-course-group-header > h1 > a.collapsed { 
+    background-image: url(data:image/png;base64,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);
+}
+
+.wwu-card-group-section, .wwu-project-group-section, .wwu-course-group-section {
+    width: 100%;
+}
+
+.wwu-publication-group-header + article.wwu-publication-group-section {
+    margin-top:0px;
+}
+
+/* Style for publication links */
+.wwu-publication a.inline {
+    margin-right: 8px;
+}
+
+/* Style for publication error messages and notices */
+div.publication-error {
+    padding: 8px;
+    margin-bottom: 10px;
+    color: #8C2E0B;
+    background-color: #FEF5F1;
+    border: 1px solid #ED541D;
+}
+
+div.publication-notice {
+    padding: 8px;
+    margin-bottom: 10px;
+    color: #840;
+    background-color: #FFFCE5;
+    border: 1px solid #ED5;
+}
+
+/* Style for displaying bibtex code */
+.bibtex-code {
+    background-color: #EDEDED;
+}
+
+.bibtex-code pre {
+    padding: 8px;
+    white-space: -moz-pre-wrap !important;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Style declarations for course languages */
+span.course_lang_de {
+    display: block;
+    background: url("lang_flag_de.gif")/*tpa=https://www.uni-muenster.de/imperia/md/images/allgemein/farbunabhaengig/lang_flag_de.gif*/ no-repeat scroll left center;
+    text-indent: -999em;
+}
+
+span.course_lang_en {
+    display: block;
+    background: url("lang_flag_en.gif")/*tpa=https://www.uni-muenster.de/imperia/md/images/allgemein/farbunabhaengig/lang_flag_en.gif*/ no-repeat scroll left center;
+    text-indent: -999em;
+}
+
+/* Style declarations for course schedule table */
+table.course_schedule {
+    width:100%;
+    border: 5px solid #E8EAEA;
+}
+
+table.course_schedule th {
+    background-color: #8C9598;
+}
+
+@media screen and (max-width:37.5em) {
+    table.course_schedule {
+        background: #E8EAEA;
+        border: 4px solid #E8EAEA;
+    }
+    table.course_schedule thead {
+        display:none;
+    }
+    
+    table.course_schedule tr {
+        float: left;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    
+    table.course_schedule tr:last-child {
+        margin-bottom: 0;
+    }
+    
+    table.course_schedule td {
+        float: left;
+        width: 100%;
+        padding: 10px 5px;
+        outline: 1px solid #A0A8AA;
+    }
+    
+    table.course_schedule td::before {
+	content:attr(data-label);
+        text-transform: uppercase;
+        color: #FFF;
+        background-color: #8C9598;
+	border-right:1px solid #A0A8AA;
+	width: 20%;
+	float:left;
+	font-weight: bold;
+        margin: -10px 5px -10px -5px;
+        padding: 10px 5px;
+        background-color: #8C9598;
+    }
+}
+  
+/* Style declarations for WWU card menu */
+div.wwu-card-menu {
+    margin-bottom: 1.6129%;
+}
+
+ul.wwu-card-menu {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul.wwu-card-menu > li {
+    height:2.8em;
+    width: 50%;
+    float: left;
+    margin-bottom: 0.6%;
+    background-color: #B6C0C1;
+    color: #FFF;
+    padding: 0px;
+    border: 0px none;
+    list-style-type: none;
+    border-width: 2px 2px 0px 2px;
+    border-style: solid solid none solid;
+    border-color: #B6C0C1 #B6C0C1 transparent #B6C0C1;
+}
+
+ul.wwu-card-menu > li:first-child {
+    margin-left: 0px;
+}
+
+ul.wwu-card-menu > li.active {
+    border: 2px solid #B6C0C1;
+    background: none repeat scroll 0% 0% #FFF;
+}
+
+ul.wwu-card-menu > li > a {
+    display: block;
+    padding:0.8em 1em;
+    font-weight: bold;
+    color: #393A3E;
+}
+
+ul.wwu-card-menu > li > a.active {
+    color: #393A3E;
+}
+
+ul.wwu-card-menu > li > a:focus{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+@media all and (max-width:55em) {
+    ul.wwu-card-menu > li:nth-child(even) {
+        margin-left: 0.6%;
+        width: 49.4%;
+    }
+}
+
+@media all and (min-width:55em) {
+    ul.wwu-card-menu {
+        height: 2.8em;
+        border-bottom: 2px solid #B6C0C1;
+    }
+
+    ul.wwu-card-menu > li {
+        width: auto;
+        display: inline;
+        margin-left: 10px;
+    }
+
+    ul.wwu-card-menu > li.active {
+        border-bottom: medium none;
+        background: none repeat scroll 0% 0% #FFF;
+    }
+}
+
+/** OWL Transition **/
+/* 
+ *  Owl Carousel CSS3 Transitions 
+ *  v1.3.2
+ */
+.owl-origin {
+	-webkit-perspective: 1200px;
+	-webkit-perspective-origin-x : 50%;
+	-webkit-perspective-origin-y : 50%;
+	-moz-perspective : 1200px;
+	-moz-perspective-origin-x : 50%;
+	-moz-perspective-origin-y : 50%;
+	perspective : 1200px;
+}
+/* scaleUp */
+.owl-fadeUp-in {
+    -webkit-animation: scaleUpFrom .5s ease both;
+    -moz-animation: scaleUpFrom .5s ease both;
+    animation: scaleUpFrom .5s ease both;
+}
+
+.owl-fadeUp-out {
+    -webkit-animation: scaleUpTo .5s ease both;
+    -moz-animation: scaleUpTo .5s ease both;
+    animation: scaleUpTo .5s ease both;
+}
+/* Keyframes */
+/*empty*/
+@-webkit-keyframes empty {
+    0% {opacity: 1}
+}
+@-moz-keyframes empty {
+    0% {opacity: 1}
+}
+@keyframes empty {
+    0% {opacity: 1}
+}
+
+@-webkit-keyframes scaleUpFrom {
+    from { opacity: 0; -webkit-transform: scale(1.5); }
+}
+@-moz-keyframes scaleUpFrom {
+    from { opacity: 0; -moz-transform: scale(1.5); }
+}
+@keyframes scaleUpFrom {
+    from { opacity: 0; transform: scale(1.5); }
+}
+
+@-webkit-keyframes scaleUpTo {
+    to { opacity: 0; -webkit-transform: scale(1.5); }
+}
+@-moz-keyframes scaleUpTo {
+    to { opacity: 0; -moz-transform: scale(1.5); }
+}
+@keyframes scaleUpTo {
+    to { opacity: 0; transform: scale(1.5); }
+}
+
+/* Override the lightbox CSS properties */
+#lightbox2-overlay {
+    position: absolute;
+    top: -1em;
+    left: 0;
+}
+body.admin-menu > #lightbox2-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* DraggableViews tables */
+.draggable a.tabledrag-handle
+{
+    height: 1.2em;
+}
+a.tabledrag-handle .handle {
+    height: 22px;
+    margin: -0.45em 0.5em;
+    padding: 0.42em 0.5em;
+    width: 20px;
+}
+
+/* DraggableViews lists */
+.module-content form select.draggableviews-weight {
+    display: none;
+}
+.draggableviews-processed {
+    float: none;
+}
+.draggableviews-processed li.views-row {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+}
+
+/* Node Gallery grid */
+.view-node-gallery-gallery-item-views  .row{
+	margin: 5px auto;
+}
+.view-node-gallery-gallery-item-views .column{
+	text-align: center;
+}
+
+/* Webform components */
+.webform-component-date select.day,
+.webform-component-date select.month,
+.webform-component-date select.year
+{
+    width: auto;
+    display: inline;
+}
+
+.webform-component-date input.webform-calendar {
+    width: auto;
+}
+
+.webform-component-textarea textarea.form-textarea {
+    height: auto;
+}
+
+.webform-component-file input.form-file {
+    height: auto;
+}
+
+.webform-component-file input.form-submit {
+    margin-top: 5px;
+}
+
+.webform-component-file div.description {
+    clear:both;
+}
+
+/* Fix the margin of checkboxes and radio buttons to show them over the full width. */
+.module-content form:not(#ie) input[type="checkbox"] + label, 
+.element-content form:not(#ie) input[type="checkbox"] + label,
+.module-content form:not(#ie) input[type="radio"] + label, 
+.element-content form:not(#ie) input[type="radio"] + label {
+  margin-right: 0;
+}
+
+/* Fix the padding of checkboxes and radio buttons on mouseover events */
+.module-content form:not(#ie) input[type="checkbox"] + label:hover,
+.module-content form:not(#ie) input[type="radio"] + label:hover,
+.element-content form:not(#ie) input[type="checkbox"] + label:hover,
+.element-content form:not(#ie) input[type="radio"] + label:hover {
+  margin: 0px;
+  padding: 5px;
+}
+
+/* Fix the z-index of the right menu on touch devices */
+@media all and (min-width:49.125em) {
+    .touchevents .nav-level-nplusone,
+    .touch .nav-level-nplusone {
+        z-index: 0;
+    }
+}
+
+.complement nav.module.nav-level-nplusone {
+  position: absolute;
+}
+
+/* Show all third level menu items on no-touch devices in the right bar. */
+.js.no-touch .nav-level-nplusone.nav-third-levelplus {
+    display: block;
+    position: relative;
+    left: 0;
+    z-index: 0;
+}
+.js.no-touch .nav-level-nplusone.nav-third-levelplus .nav-partial-ie {
+    margin-bottom: 1em;
+}
+.js.no-touchevents .nav-level-nplusone.nav-third-levelplus a,
+.js.no-touch .nav-level-nplusone.nav-third-levelplus a {
+    font-weight: normal;
+}
+.js.no-touchevents .nav-level-nplusone.nav-third-levelplus a:focus,
+.js.no-touchevents .nav-level-nplusone.nav-third-levelplus a:active,
+.js.no-touch .nav-level-nplusone.nav-third-levelplus a:focus,
+.js.no-touch .nav-level-nplusone.nav-third-levelplus a:active {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: auto;
+    z-index: 0;
+    padding: 0;
+    border: none;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* Show a dropdown menu item for third level menu items on mobile devices */
+@media all and (max-width:49.125em){
+  .complement nav.module.nav-level-nplusone.nav-third-levelplus {
+      display: block;
+      position: relative;
+      left: 0;
+      z-index: 0;
+  }
+  
+  .nav-nplusone-toggle {
+      display: block;
+  }
+  
+  .nav-level-nplusone.nav-third-levelplus {
+      margin-bottom: 0.5em;
+  }
+  
+  .nav-level-nplusone.nav-third-levelplus .nav-partial-ie {
+      display: none;
+  }
+}
+
+/* Show the navigation in the right bar on desktops with touch function */
+@media all and (min-width:49.125em){
+  .touchevents .complement nav.module.nav-level-nplusone,
+  .touch .complement nav.module.nav-level-nplusone {
+      position: relative;
+  }
+  
+  .touchevents .nav-level-nplusone .nav-partial-ie,
+  .touch .nav-level-nplusone .nav-partial-ie {
+      margin-bottom: 1em;
+  }
+}
+
+/* Fix the width of dates elements. */
+.element-content .dates dt, 
+.module-content .dates dt {
+    width: 100%;
+}
+
+.element-content .dates dd, 
+.module-content .dates dd {
+    width: 100%;
+}
+
+@media all and (min-width:25em){
+    .element-content .dates dt, 
+    .module-content .dates dt {
+        width: 20%;
+    }
+    
+    .element-content .dates dd, 
+    .module-content .dates dd {
+        width: 80%;
+    }
+}
+
+/* Show div elements as floated blocks on tablets and desktops */
+@media all and (min-width:37.5em){
+    .block-25-t {
+        display: block;
+        float: left;
+        width: 25%;
+    }
+    .block-50-t{
+        display: block;
+        float: left;
+        width: 50%;
+    }
+    .block-75-t {
+        display: block;
+        float: left;
+        width: 75%;
+    }
+    .block-33-t {
+        display: block;
+        float: left;
+        width: 33.33333%;
+    }
+    .block-66-t {
+        display: block;
+        float: left;
+        width: 66.66667%;
+    }
+}
+
+@media all and (min-width:49.125em){
+    .block-25-d {
+        display: block;
+        float: left;
+        width: 25%;
+    }
+    .block-50-d {
+        display: block;
+        float: left;
+        width: 50%;
+    }
+    .block-75-d {
+        display: block;
+        float: left;
+        width: 75%;
+    }
+    .block-33-d {
+        display: block;
+        float: left;
+        width: 33.33333%;
+    }
+    .block-66-d {
+        display: block;
+        float: left;
+        width: 66.66667%;
+    }
+}
+
+/* Set a (minimum) height for elements on tablets and desktops */
+@media all and (min-width:37.5em){
+    .row-2-t {
+        min-height: 2em;
+    }
+    .row-3-t {
+        min-height: 3em;
+    }
+    .row-4-t {
+        min-height: 4em;
+    }
+    .row-5-t {
+        min-height: 5em;
+    }
+}
+
+@media all and (min-width:49.125em){
+    .row-2-d {
+        min-height: 2em;
+    }
+    .row-3-d {
+        min-height: 3em;
+    }
+    .row-4-d {
+        min-height: 4em;
+    }
+    .row-5-d {
+        min-height: 5em;
+    }
+}
+/* Styles for WI Job Offer Content Type  */
+.wi_job_offer_row{
+  margin-bottom: 2em;
+}
+.wi_job_offer_row h3{
+  margin-bottom: 0;
+}
+.wi_job_offer_row p{
+  margin-top: 0;
+}
+.node-wi-job-offer .field-name-field-audience,
+.node-wi-job-offer .field-name-field-job-type,
+.node-wi-job-offer .field-name-field-job-offer-pdf{
+  margin-bottom: 1em;
+}
+
+.node-wi-job-offer .field-name-field-audience .field-item,
+.node-wi-job-offer .field-name-field-job-type .field-item {
+  display: inline;
+}
+.node-wi-job-offer .field-name-field-audience .field-item:after ,
+.node-wi-job-offer .field-name-field-job-type .field-item:after {
+  content: ', ';
+}
+.node-wi-job-offer .field-name-field-audience .field-item:last-child:after,
+.node-wi-job-offer .field-name-field-job-type .field-item:last-child:after {
+  content: '';
+}
+
+/* Styles for embedded videos */
+.embedded-video .player {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embedded-video .player iframe,
+.embedded-video .player object,
+.embedded-video .player embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Styles for WWU Guest nodes and views */
+@media all and (min-width:25em){
+  .node-wwu-guest figure.field-picture {
+    float: right;
+  }
+  
+  .node-wwu-guest .field-name-body {
+    clear: both;
+  }
+}
+
+.node-wwu-guest .field {
+  margin-bottom: 1em;
+}
+
+.node-wwu-guest .field-name-body {
+  margin-bottom: 2em;
+}
+
+.row .wwu-guests-row {
+  background-color: #ededed;
+  padding: 10px;
+  color: #70798a;
+  position: relative;
+  margin-bottom: 1.6129%;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.row .wwu-guests-row a:link,
+.row .wwu-guests-row a:visited,
+.row .wwu-guests-row a:hover {
+  color: #003366;
+}
+
+.row .wwu-guests-row a:focus {
+  color: #fff;
+}
+
+.row .wwu-guests-row > .more-link {
+  text-align: center;
+}
+
+.row .wwu-guests-row > .more-link > a:link,
+.row .wwu-guests-row > .more-link > a:visited {
+  color: #70798a;
+}
+
+.row .wwu-guests-row > .more-link > a:focus {
+  color: #fff;
+}
+
+/* Give WWU card page elements a minimal height to ensure the contextual links can be displayed */
+.akkordeon > li > .node-wwu-card-page {
+  min-height: 5em;
+}
+
+/* CSS class for tables with a fixed layout */
+table.table-fixed {
+  table-layout: fixed;
+}
