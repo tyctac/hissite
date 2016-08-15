@@ -27,6 +27,7 @@ urlpatterns = [
     url(r'^programs/',include('programs.urls')),
     url(r'^events/',include('events.urls')),
     url(r'^contact/',include('contact.urls')),
+    url(r'^$',include('home.urls')),
 ] 
 
 urlpatterns += staticfiles_urlpatterns()
