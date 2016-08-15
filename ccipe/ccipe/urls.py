@@ -23,6 +23,10 @@ admin.autodiscover()
 urlpatterns = [
     url(r'^home/',include('home.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^aboutus/',include('aboutus.urls')),
+    url(r'^programs/',include('programs.urls')),
+    url(r'^events/',include('events.urls')),
+    url(r'^contact/',include('contact.urls')),
 ] 
 
 urlpatterns += staticfiles_urlpatterns()
