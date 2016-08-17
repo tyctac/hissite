@@ -11,12 +11,20 @@ def index1(request):
         'alist':alist,
     }
     return HttpResponse(template.render(context,request))
-def index(request):
+def index2(request):
 #    welcomehead = WelcomeHead.objects.all()[0]
     welcome_head_list = WelcomeHead.objects.all()
     template = loader.get_template('home/index-1.htm')
     context = {
         'welcome_head_list':welcome_head_list,
+    }
+    return HttpResponse(template.render(context,request))
+
+def index(request):
+    welcome = WelcomeHead.objects.all()[0]
+    template = loader.get_template('home/index-1.htm')
+    context = {
+        'welcome':welcome,
     }
     return HttpResponse(template.render(context,request))
 
