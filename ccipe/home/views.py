@@ -19,3 +19,50 @@ def index(request):
         'welcome_head_list':welcome_head_list,
     }
     return HttpResponse(template.render(context,request))
+
+def aboutus(request):
+#    welcomehead = WelcomeHead.objects.all()[0]
+    welcome_head_list = WelcomeHead.objects.all()
+    template = loader.get_template('home/aboutus.html')
+    context = {
+        'welcome_head_list':welcome_head_list,
+    }
+    return HttpResponse(template.render(context,request))
+
+def events(request):
+#    welcomehead = WelcomeHead.objects.all()[0]
+    welcome_head_list = WelcomeHead.objects.all()
+    template = loader.get_template('home/events.html')
+    context = {
+        'welcome_head_list':welcome_head_list,
+    }
+    return HttpResponse(template.render(context,request))
+
+def programs(request):
+#    welcomehead = WelcomeHead.objects.all()[0]
+    welcome_head_list = WelcomeHead.objects.all()
+    template = loader.get_template('home/programs.html')
+    context = {
+        'welcome_head_list':welcome_head_list,
+    }
+    return HttpResponse(template.render(context,request))
+
+def workwithus(request):
+#    welcomehead = WelcomeHead.objects.all()[0]
+    welcome_head_list = WelcomeHead.objects.all()
+    template = loader.get_template('home/workwithus.html')
+    context = {
+        'welcome_head_list':welcome_head_list,
+    }
+    return HttpResponse(template.render(context,request))
+
+def contact(request):
+#    welcomehead = WelcomeHead.objects.all()[0]
+    welcome_head_list = WelcomeHead.objects.all()
+    template = loader.get_template('home/contact.html')
+    context = {
+        'welcome_head_list':welcome_head_list,
+    }
+    return HttpResponse(template.render(context,request))
+
+

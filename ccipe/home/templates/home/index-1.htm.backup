@@ -9,10 +9,10 @@
 
 	<title>China Center of International Politics and Economy</title>
 
-<link rel="stylesheet" href="/static/home/system.base.css-oatn1k.css" type="text/css">
-<link rel="stylesheet" href="/static/home/system.menus.css-oatn1k.css" type="text/css">
-<link rel="stylesheet" href="/static/home/system.messages.css-oatn1k.css" type="text/css">
-<link rel="stylesheet" href="/static/home/system.theme.css-oatn1k.css" type="text/css">
+<link rel="stylesheet" href="/static/system.base.css-oatn1k.css" type="text/css">
+<link rel="stylesheet" href="/static/system.menus.css-oatn1k.css" type="text/css">
+<link rel="stylesheet" href="/static/system.messages.css-oatn1k.css" type="text/css">
+<link rel="stylesheet" href="/static/system.theme.css-oatn1k.css" type="text/css">
 	<!-- <style type="text/css" media="all">
 @import url("system.base.css-oatn1k.css");
 @import url("system.menus.css-oatn1k.css");
@@ -74,12 +74,17 @@
 <link type="text/css" rel="stylesheet" href="/static/home/primary.css"  media="screen" />
 <link type="text/css" rel="stylesheet" href="/static/home/secondary.css"  media="screen" />
 <link type="text/css" rel="stylesheet" href="/static/home/owl.carusel.css"  media="screen" />
-<link type="text/css" rel="stylesheet" href="/static/home/wwucd_custom.css-oatn1k.css"  media="screen" />
-<script type="text/javascript" src="/static/home/jquery-1.8.2.min.js-v=1.8.2" ></script>
+<style type="text/css" media="screen">
+@import url("wwucd_custom.css-oatn1k.css");
+</style>
+	<script type="text/javascript" src="/static/home/jquery-1.8.2.min.js-v=1.8.2" ></script>
 <script type="text/javascript" src="/static/home/jquery.once.js-v=1.2" ></script>
 <script type="text/javascript" src="/static/home/drupal.js-oatn1k" ></script>
 <script type="text/javascript" src="/static/home/lightbox.js-oatn1k" ></script>
 <script type="text/javascript" src="/static/home/modernizr.js" ></script>
+<script type="text/javascript">
+
+</script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
 jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"wwucd","theme_token":"D-hR_3vapDYMSNr6KmXhHSAmIz9o7yRUqjuPd8CQ_Yo","js":{"widgets.js":1,"jquery.owl.carousel.js":1,"main.js":1,"jquery.js":1,"jquery.once.js":1,"drupal.js":1,"lightbox.js":1,"modernizr.js":1,"0":1},"css":{"system.base.css":1,"system.menus.css":1,"system.messages.css":1,"system.theme.css":1,"ldap_user.css":1,"comment.css":1,"date.css":1,"datepicker.1.7.css":1,"field.css":1,"node.css":1,"search.css":1,"user.css":1,"views.css":1,"ckeditor.css":1,"ctools.css":1,"ldap_servers.admin.css":1,"lightbox.css":1,"panels.css":1,"public:\/\/ctools\/css\/7eeef226eb111f17f7d83e9d35c7c4f2.css":1,"flexible.css":1,"public:\/\/ctools\/css\/e72048fdc2eaa87cf17c7b82ce2cf3d6.css":1,"main.css":1,"print.css":1,"ie9.css":1,"ie8.css":1,"ie7.css":1,"primary.css":1,"secondary.css":1,"owl.carousel.css":1,"wwucd_custom.css":1}},"lightbox2":{"rtl":"0","file_path":"\/(\\w\\w\/)public:\/","default_image":"brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":true,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":false,"disable_resize":false,"disable_zoom":false,"force_show_nav":false,"show_caption":true,"loop_items":false,"node_link_text":"View Image Details","node_link_target":false,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":false,"useragent":"suchen.uni-muenster.de%2FWWU%20Crawler%20GSA (Enterprise; T1-BTMZTSJ5BGWAT; sys@uni-muenster.de)"},"urlIsAjaxTrusted":{"\/":true}});
@@ -143,11 +148,11 @@ onfocus="if (this.value == 'search word') this.value=''" onblur="if (this.value 
 <input type="hidden" name="form_id" value="search_block_form" />
 </div></form>                    </nav>
                     <ul id="hauptnavigation" class="nav-first-level"  role="navigation"><li class="nav-item-main current" data-href="javascript:if(confirm('https://www.ercis.org/home  #'))window.location='https://www.ercis.org/home'" >Home</li>
-<li class="nav-item-main"><span class="nav-level-toggle"></span><a href="aboutus.html">About us</a></li>
-<li class="nav-item-main"><span class="nav-level-toggle"></span><a href="programs.html">Programs</a></li>
-<li class="nav-item-main"><span class="nav-level-toggle"></span><a href="events.html">Events</a></li>
-<li class="nav-item-main"><a href="workwithus.html">Work with us</a></li>
-<li class="nav-item-main"><a href="contact.html" >Contact</a></li>
+<li class="nav-item-main"><span class="nav-level-toggle"></span><a href="/static/aboutus/aboutus.html">About us</a></li>
+<li class="nav-item-main"><span class="nav-level-toggle"></span><a href="/static/programs/programs.html">Programs</a></li>
+<li class="nav-item-main"><span class="nav-level-toggle"></span><a href="/static/events/events.html">Events</a></li>
+<li class="nav-item-main"><a href="/static/home/workwithus.html">Work with us</a></li>
+<li class="nav-item-main"><a href="/static/home/contact.html" >Contact</a></li>
 </ul>            </nav>
     <div class="wrapper-complement-nav six columns">
         <nav class="nav-audience-container" role="navigation">
@@ -226,7 +231,16 @@ onfocus="if (this.value == 'search word') this.value=''" onblur="if (this.value 
     <footer  class="metainfo">&nbsp;
             </footer>
     <div class="module-content">
-        			<h2>China Center of International Politics and Economy (CCIPE) - Welcome!</h2>
+        			<!-- <h2>{{ welcome_head.welcome_head_text }}</h2> -->
+                    {% if welcome_head_list %}
+                    <ul>
+                    {% for welcomehead in welcome_head_list %}
+                    <li>{{ welcomehead.welcome_head_text }}</a></li>
+                    {% endfor %}
+                    </ul>
+                    {% else %}
+                    <p>No welcome are available.</p>
+                    {% endif %}
 		        <div class="content">
             <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Dear visitors,</p>
 
