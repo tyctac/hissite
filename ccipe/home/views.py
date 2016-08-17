@@ -21,7 +21,10 @@ def index2(request):
     return HttpResponse(template.render(context,request))
 
 def index(request):
-    welcome = WelcomeHead.objects.all()[0]
+    x = WelcomeHead.objects.all()
+    if x != None and len(x) > 0 :
+        welcome = WelcomeHead.objects.all()[0]
+    else: welcome = None
     template = loader.get_template('home/index-1.htm')
     context = {
         'welcome':welcome,
