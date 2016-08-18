@@ -11,4 +11,5 @@ urlpatterns = [
     url(r'^programs',views.programs,name='programs'),
     url(r'^workwithus',views.workwithus,name='workwithus'),
     url(r'^contact',views.contact,name='contact'),
+    url(r'^submit',views.submit,name='submit'),
 ]

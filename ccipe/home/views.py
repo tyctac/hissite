@@ -2,6 +2,7 @@ from django.shortcuts import render,get_object_or_404
 from django.http import HttpResponse,HttpResponseRedirect
 from django.template import loader
 from .models import WelcomeHead
+from django.core.mail import send_mail
 
 # Create your views here.
 def index1(request):
@@ -76,4 +77,25 @@ def contact(request):
     }
     return HttpResponse(template.render(context,request))
 
+def remark(request):
+    template = loader.get_template('home/contact.html')
+    if request.method == 'POST':
+        form = RemarkForm(request.POST) 
+        if form.is_valid():
+            return HttpResponseRedirect('/home/contact')
+    else :
+        form = RemarkForm()
+    return render_to_response('/home/contact.html')
 
+def submit(request):
+    if request.method == 'POST':
+        name = request.POST['submitted[your_name]']
+        email = request.POST['submitted[your_email_address]']
+        subject = request.POST['submitted[your_subject]']
+        message = request.POST['submitted[yor_message]']
+        flag = send_mail(subject,message,'postmaster@ccipe.net',['wwhat@qq.com'],fail_silently=False)
+        template = loader.get_template('home/contact.html')
+        context = {
+            'flag':flag,
+        }
+        return HttpResponse(template.render(context,request))        

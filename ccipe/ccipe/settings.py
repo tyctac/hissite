@@ -137,3 +137,13 @@ STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 STATICFILES_DIRS = (
     os.path.join(PROJECT_DIR, 'staticfiles'),
 )
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = False
+EMAIL_HOST = 'smtp.mxhichina.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = 'postmaster@ccipe.net'
+EMAIL_HOST_PASSWORD = 'Ccipe123'
+
+#default charset
+DEFAULT_CHARSET = 'utf-8'
